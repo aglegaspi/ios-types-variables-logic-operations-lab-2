@@ -163,9 +163,15 @@ var b = 6
 var c = 3
 var d = 4
 
-let myArray = [a, b, c, d]
-var lowestVariable = myArray.min()
-print("The lowest numer is \(lowestVariable ?? 0).")
+if a < b && a < c && a < d {
+print(a)
+} else if b < a && b < c && b < d {
+print(b)
+} else if c < a && c < b && c < d {
+print(c)
+} else if d < a && d < b && d < c {
+print(d)
+}
 ```
 
 
