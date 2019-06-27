@@ -101,13 +101,17 @@ var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
 // your code here
+var baconExpire = 7
+var eggsExpire = 21
 
-if baconAge > 7 {
-print("throw out Bacon")
-} else if eggsAge > 21 {
-print("throw out Bacon")
+if eggsAge >= eggsExpire && baconAge >= baconExpire {
+print("throw out bacon and eggs")
+} else if eggsAge >= eggsExpire {
+print("throw out Eggs")
+} else if baconAge > baconExpire {
+print("throw out bacon")
 } else {
-print("you can cook bacon and eggs")
+print("cook bacon and eggs")
 }
 ```
 
@@ -159,7 +163,9 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
+let myArray = [a, b, c, d]
+var lowestVariable = myArray.min()
+print("The lowest numer is \(lowestVariable ?? 0).")
 ```
 
 
