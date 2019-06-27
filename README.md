@@ -20,7 +20,16 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
+// your code
+var yourGrade = 9.3
+
+var classAverage: Double = (grade1 + grade2 + grade3 + yourGrade) / 4
+
+if yourGrade > classAverage {
+print("Above Average");
+} else {
+print("Below Average"); }
+
 ```
 
 ***
@@ -32,6 +41,13 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
+
+if number % 2 == 0 {
+print("even")
+} else {
+print("odd")
+}
+}
 ```
 
 ***
@@ -44,6 +60,16 @@ var a = 12
 var b = 3
 
 // code here
+
+var a = 12
+var b = 3
+
+if a % b == 0 {
+print("divisble")
+} else {
+print("non divisible")
+}
+
 ```
 
 ***
@@ -57,6 +83,12 @@ var b = 3
 var c = 2
 
 // your code here
+
+if a == b || a == c || b == c {
+print("at least two variables have the same value")
+} else {
+print("all the values are different")
+}
 ```
 
 ***
@@ -69,6 +101,14 @@ var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
 // your code here
+
+if baconAge > 7 {
+print("throw out Bacon")
+} else if eggsAge > 21 {
+print("throw out Bacon")
+} else {
+print("you can cook bacon and eggs")
+}
 ```
 
 ***
@@ -77,10 +117,18 @@ var eggsAge = 12 // eggs are 12 days old
 You are given a year, determine if it’s a leap year. A leap year is a year containing an extra day. It has 366 days instead of the normal 365 days. The extra day is added in February, which has 29 days instead of the normal 28 days. Leap years occur every 4 years. 2012 was a leap year and 2016 will also be a leap year.
 The above rule is valid except that every 100 years special rules apply. Years that are divisible by 100 are not leap years if they are not also divisible by 400. For example 1900 was not a leap year, but 2000 was. Print `"Leap year!"` or `"Not a leap year!"` depending on the year you are provided.
 
+
 ```swift
 let year = 2014
 
 // your code here
+
+if year % 4 == 0 && year % 100 != 0 || year % 400 == 0 {
+print("leap")
+} else {
+print("no")
+}
+
 ```
 
 ***
@@ -91,7 +139,11 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// your code here
+if randomNum % 2 == 0 {
+print("heads")
+} else {
+print("tails")
+}
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -109,5 +161,6 @@ var d = 4
 
 // your code here
 ```
+
 
 ***
